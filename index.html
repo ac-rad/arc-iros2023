@@ -205,37 +205,142 @@
         </p>
       </div>
       <div class="column is-two-fifths">
-        <img src="static/images/constrained_motion_planning.gif" alt="Constrained motion planning" width="600" hheight="338"/>
+        <img src="static/images/constrained_motion_planning.gif" alt="Constrained motion planning" style="border-radius:3%;width:auto;height:400px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <h2 class="title is-3 has-text-centered">Constrained Motion Planning Performance of 7 DoF and 8
+      DoF Robot</h2>
+    <div class="container">
+      <div class="content has-text-justified">
+        <p>
+          The
+          constrained motion planning performance of 7 DoF and 8
+          DoF robot is evaluated in two scenarios:  (1) single step, (2)
+          two steps. In scenario (1), robots find a constrained path
+          with a fixed orientation from initial to final positions that
+          are randomly sampled. Scenario (2) extends the first with an
+          additional intermediate sampled waypoint.
+        </p>
+      </div>
+      <h4 class="subtitle is-4"><u>Scenario 1</u>: Single Step</h4>
+      <div class="columns">
+        <div class="column ">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/7dof_case1.mp4"
+            type="video/mp4">
+          </video>
+          <h4 class="subtitle is-4 has-text-centered">7 Degrees of Freedom</h4>
+        </div>
+        <div class="column ">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/8dof_case1.mp4"
+            type="video/mp4">
+          </video>
+          <h4 class="subtitle is-4 has-text-centered">8 Degrees of Freedom</h4>
+        </div>
+      </div>
+      <h4 class="subtitle is-4"><u>Scenario 2</u>: Two Step</h4>
+      <div class="columns">
+        <div class="column ">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/7dof_case2.mp4"
+            type="video/mp4">
+          </video>
+          <h4 class="subtitle is-4 has-text-centered">7 Degrees of Freedom</h4>
+        </div>
+        <div class="column ">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/8dof_case2.mp4"
+            type="video/mp4">
+          </video>
+          <h4 class="subtitle is-4 has-text-centered">8 Degrees of Freedom</h4>
+        </div>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          The performance of the 7-DoF and 8-DoF robot arms for
+          the two scenarios are shown in the following table. The results show that
+          the IK and constrained motion planning have higher success
+          rates in 8-DoF compared with the 7-DoF robot.
+        </p>
+      </div>
+      <div class="content has-text-centered">
+        <table class="table is-striped is-hoverable">
+          <thead>
+            <th> </th>
+            <th>Scenario 1 (%)</th>
+            <th> </th>
+            <th>Scenario 2 (%)</th>
+            <th> </th>
+            <tr>
+              <th> </th>
+              <th>IK</th>
+              <th>Plan</th>
+              <th>IK</th>
+              <th>Plan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>7 DoF</b></td>
+              <td>99</td>
+              <td>84</td>
+              <td>99</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td><b>8 DoF</b></td>
+              <td>100</td>
+              <td>97</td>
+              <td>100</td>
+              <td>84</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <img src="static/images/table.png" alt="Constrained motion planning table" style="width:50%;height:auto;"/> -->
       </div>
     </div>
   </div>
 </section>
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-light">
   <div class="hero-body">
     <h2 class="title is-3 has-text-centered">Pouring skill</h2>
     <div class="container">
-      <div class="columns">
-      <div class="column is-three-fifths">
+      <div class="content">
         <p>
-        Liquid transfer is one of the essential skills used in a chemistry lab. A pouring skill that intermittently rotates the container is implemented. This pouring strategy compensates the delayed feedback from the scale and outperformed PD controller.
+        Liquid transfer is one of the essential skills used in a chemistry lab. A pouring skill that intermittently rotates the container is implemented. This pouring strategy compensates the delayed feedback from the scale and outperformed PD controller.  We present and analyze a set of accurate and
+        efficient pouring skills inspired by human motions.
         </p>
       </div>
-      <div class="column is-one-fifth">
-        <img src="static/images/pouring_water.gif" alt="Water pouring"/>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <img src="static/images/human_pour.gif" alt="Human pouring" style="border-radius:3%;width:auto;height:400px;"/>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/pouring_water.gif" alt="Water pouring" style="border-radius:3%;width:auto;height:400px;"/>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/pouring_salt.gif" alt="Water pouring" style="border-radius:3%;width:auto;height:400px;"/>
+        </div>
       </div>
-      <div class="column is-one-fifth">
-        <img src="static/images/pouring_salt.gif" alt="Water pouring"/>
-      </div>
-    </div>
     </div>
   </div>
 </section>
 <!-- End image carousel -->
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
